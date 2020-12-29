@@ -1,0 +1,21 @@
+#productDescription {
+    border-top: 1px solid#dd404b;
+}
+
+#productInfo {
+    border: 1px solid#dd404b;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.productImage {
+    max-height : 70vh;
+}
+
+.buyingActions {
+    width: 300px !important;
+}
+
+.adaptVW {
+    max-width: 100% !important;
+}

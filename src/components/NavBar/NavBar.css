@@ -1,0 +1,15 @@
+#navbar{
+    background-color: #00C5CE !important ;
+}
+
+#searchButton{
+    background-color: #48FCFE;
+}
+
+span.nav-link{
+    text-align: center;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}

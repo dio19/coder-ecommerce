@@ -1,0 +1,9 @@
+.mainBackground {
+    background-color: #d22531 !important;
+}
+
+.mainOutline{
+  border-color: #d22531 !important;
+  background-color: white !important;
+  color: #d22531 !important;
+}
