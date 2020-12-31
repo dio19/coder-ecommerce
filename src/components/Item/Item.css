@@ -15,9 +15,12 @@
 }
 
 .tilt {
+  padding: 5px !important;
+  margin: 0px 22px 22px 22px !important;
+  height: 400px !important;
+  width: 280px !important;
   background-color: transparent !important;
   transform-style: preserve-3d;
-  transform: perspective(1000px);
 }
 
 .productCard:hover {
@@ -31,9 +34,17 @@
 }
 
 .cardImage {
-  height : 270px;
+  width : 270px;
 }
 
 .cardImage:hover {
-  transform: translateZ(25px);
+  transform: perspective(1000px);
+}
+
+.productName {
+  color: white
+}
+
+.productPrice {
+  color: white
 }
