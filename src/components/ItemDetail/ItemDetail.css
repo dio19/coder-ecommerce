@@ -1,15 +1,19 @@
 #productDescription {
-    border-top: 1px solid#dd404b;
+    border-top: 1px solid#00C5CE;
 }
 
 #productInfo {
-    border: 1px solid#dd404b;
+    border: 1px solid#00C5CE;
     border-radius: 3px;
     text-align: center;
 }
 
 .productImage {
     max-height : 70vh;
+}
+
+.productDetail {
+    color: white !important
 }
 
 .buyingActions {

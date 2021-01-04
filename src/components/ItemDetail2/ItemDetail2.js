@@ -27,7 +27,7 @@ export default function ItemDetail({item}) {
         }
         return cant;
     }
-    console.log('item', item)
+
     if (item) {
         return (
             <div id="productInfo" className="m-4">
@@ -37,11 +37,11 @@ export default function ItemDetail({item}) {
                         <img src={item.image} alt="" className="adaptVW productImage p-3"/>
                     </div>
 
-                    <div className="adaptVW d-flex flex-column flex-grow-1 m-4 pr-lg-4 align-items-center justify-content-center productDetail">
+                    <div className="adaptVW d-flex flex-column flex-grow-1 m-4 pr-lg-4 align-items-center justify-content-center">
                         <h4>
-                            {(item.title).toUpperCase()}
+                            {item.title}
                         </h4>
-                        <h3 className="productDetail">
+                        <h3 className="productPrice">
                             ${item.price}
                         </h3>
                         <div className="adaptVW buyingActions p-4">
