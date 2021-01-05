@@ -49,7 +49,7 @@ export default function ItemDetail({item}) {
                             <>
                                 <ItemCount initial="1" min="1" max={item.stock - cartCount()} onAdd={agregarAlCarrito} onUpdate={handleUpdate}/>
                                 <div className="mt-3 shadow">
-                                    <Button label={`Comprar ${counter}`} action={comprar} outlined/>
+                                    <Button label={`Agregar al carrito ${counter}`} action={comprar} outlined/>
                                 </div>
                             </>
                             }

@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 export default function ItemList(props) {
     return (
-        <div style={{ display: 'flex', justifyContent: 'flexStart', flexWrap: 'wrap', margin: 15 }}>
+        <div style={{ display: 'flex', justifyContent: 'flexStart', flexWrap: 'wrap', margin: 15, width: '100%', height: '100vh' }}>
             {props.items.map ((item) => 
                 <Link to={`/item/${item.id}`} key={item.id}>
                     <Item item={item}></Item>
