@@ -3,7 +3,6 @@ import ItemDetail from '../ItemDetail/ItemDetail';
 import Spinner from '../Spinner/Spinner';
 import { useParams } from 'react-router-dom';
 import { getFirestore } from '../../firebase';
-import { products } from '../Home/Home'
 import './ItemDetailContainer.css';
 
 export default function ItemDetailContainer() {
@@ -16,36 +15,26 @@ export default function ItemDetailContainer() {
 
     useEffect(() => {
 
-        // const db = getFirestore();
-        // const collection = db.collection("items");
-        // const item = collection.doc(params.id);
+        const db = getFirestore();
+        const collection = db.collection("items");
+        const item = collection.doc(params.id);
 
-        // item.get().then( (doc) => {
+        item.get().then( (doc) => {
 
-        //     if (!doc.exists) {
-        //         setItemExist(false);
-        //     } else {
-        //         setItem ({id: doc.id, ...doc.data()});
-        //     }
+            if (!doc.exists) {
+                setItemExist(false);
+            } else {
+                setItem ({id: doc.id, ...doc.data()});
+            }
 
-        // }).catch( (error) => {
-        //     console.log(`Se produjo un error al obtener el item ${params.id}`, error)
-        // }).finally ( () => {
-        //     setLoading(false);
-        // });
-
-        const product = products.find(product => product.id === params.id)
-
-        if(product) {
-            setItem(product)
-            setLoading(false)
-        } else {
-            setItemExist(false)
-        }
-
+        }).catch( (error) => {
+            console.log(`Se produjo un error al obtener el item ${params.id}`, error)
+        }).finally ( () => {
+            setLoading(false);
+        });
         
     }, [params]);
-    console.log(item)
+
     return (
         <>
         { loading  ? <Spinner/> :

@@ -2,12 +2,12 @@ import * as firebase from 'firebase/app';
 import 'firebase/firestore';
 
 const app = firebase.initializeApp({
-    apiKey: "AIzaSyCtPDngypmnJZV88UEcoONcIZ7ndIyqDwA",
-    authDomain: "ecommerce-coderhouse-dio.firebaseapp.com",
-    projectId: "ecommerce-coderhouse-dio",
-    storageBucket: "ecommerce-coderhouse-dio.appspot.com",
-    messagingSenderId: "112379894755",
-    appId: "1:112379894755:web:1a65020bd1d5fb8d3a5ed6"
+    apiKey: "AIzaSyBXjcNY88S7d2-K23laMCWWAbhQs_RRnz8",
+    authDomain: "coder-ecommerce-dio.firebaseapp.com",
+    projectId: "coder-ecommerce-dio",
+    storageBucket: "coder-ecommerce-dio.appspot.com",
+    messagingSenderId: "28982305992",
+    appId: "1:28982305992:web:98a8177a011f6ddbb7f1fd"
   });
 
 export function getFirebase() {

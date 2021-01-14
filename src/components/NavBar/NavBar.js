@@ -28,14 +28,14 @@ export default function NavBar() {
                     <li className="nav-item dropdown text-center">
                         <div className="nav-link dropdown-toggle" data-toggle="dropdown">Categorias</div>
                         <div className="dropdown-menu">
-                            <Link to={`/categories/camisas`}>
-                                <div className="dropdown-item">Camisas</div>
+                            <Link to={`/categories/urbanas`}>
+                                <div className="dropdown-item">Urbanas</div>
                             </Link>
-                            <Link to={`/categories/camperas`}>
-                                <div className="dropdown-item">Camperas</div>
+                            <Link to={`/categories/skate`}>
+                                <div className="dropdown-item">Skate</div>
                             </Link>
-                            <Link to={`/categories/jeans`}>
-                                <div className="dropdown-item">Jeans</div>
+                            <Link to={`/categories/tennis`}>
+                                <div className="dropdown-item">Tennis</div>
                             </Link>
                         </div>
                     </li>
