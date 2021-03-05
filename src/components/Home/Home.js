@@ -39,10 +39,9 @@ export default function Home(props) {
       }).catch( error => {
         console.log("Error searching items", error);
       });
-      console.log('products', products)
       return () => mounted = false;
 
-    })
+    }, [])
 
 
     if (products.length === 0) {

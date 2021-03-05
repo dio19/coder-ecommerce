@@ -27,7 +27,6 @@ export default function ItemDetail({item}) {
         }
         return cant;
     }
-    console.log('item', item)
     if (item) {
         return (
             <div id="productInfo" className="m-4">
